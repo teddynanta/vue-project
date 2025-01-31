@@ -1,6 +1,7 @@
 <script setup>
 import DaisyNavbar from './components/partials/DaisyNavbar.vue';
 import Tab from './components/layouts/Tab.vue';
+import HeroSection from './components/layouts/HeroSection.vue';
 </script>
 
 <template>
@@ -8,6 +9,7 @@ import Tab from './components/layouts/Tab.vue';
         <header>
             <DaisyNavbar />
         </header>
+        <HeroSection />
         <div class="flex justify-center lg:px-52 2xl:px-96">
         <Tab />
         </div>

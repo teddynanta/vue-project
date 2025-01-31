@@ -47,7 +47,8 @@ onMounted(() => {
     </form>
   </dialog>
 
-  <div class="navbar bg-base-100 text-base-content lg:px-52 2xl:px-96">
+
+  <div class="navbar bg-transparent text-base-content lg:px-52 2xl:px-96">
     <div class="navbar-start">
       <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -78,13 +79,18 @@ onMounted(() => {
           <li><a>Item 3</a></li>
         </ul>
       </div>
-      <a class="btn btn-ghost text-xl">Ted.</a>
+      <a href="#" class="btn btn-ghost text-xl">Ted.</a>
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
         <li>
           <a>
-            <HomeIcon />
+            Home
+          </a>
+        </li>
+        <li>
+          <a>
+            Tech
           </a>
         </li>
         <li>
@@ -96,7 +102,7 @@ onMounted(() => {
             </ul>
           </details>
         </li>
-        <li><a>Item 3</a></li>
+        <li><a>Contacs</a></li>
       </ul>
     </div>  
     <div class="navbar-end me-3">
@@ -110,4 +116,5 @@ onMounted(() => {
       </label>
     </div>
   </div>
+
 </template>
