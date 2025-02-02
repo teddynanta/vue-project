@@ -9,10 +9,10 @@ import HeroSection from './components/layouts/HeroSection.vue';
         <header class="fixed top-0 left-0 w-full z-50 bg-base-100/20 backdrop-blur-md shadow-md">
             <DaisyNavbar />
         </header>
-        <section class="relative h-screen flex items-center justify-center">
+        <section id="hero" class="relative h-screen flex items-center justify-center">
             <HeroSection />
         </section>
-        <div class="flex justify-center lg:px-52 2xl:px-96">
+        <div id="tech" class="flex justify-center lg:px-52 2xl:px-96">
         <Tab />
         </div>
     </div>

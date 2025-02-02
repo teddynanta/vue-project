@@ -84,25 +84,25 @@ onMounted(() => {
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
         <li>
-          <a>
+          <a href="#hero" class="font-bold">
             Home
           </a>
         </li>
         <li>
-          <a>
+          <a href="#tech" class="font-bold">
             Tech
           </a>
         </li>
         <li>
           <details>
-            <summary>Parent</summary>
+            <summary class="font-bold">Parent</summary>
             <ul class="p-2">
               <li><a>Submenu 1</a></li>
               <li><a>Submenu 2</a></li>
             </ul>
           </details>
         </li>
-        <li><a>Contacs</a></li>
+        <li><a class="font-bold">Contacs</a></li>
       </ul>
     </div>  
     <div class="navbar-end me-3">
@@ -111,8 +111,8 @@ onMounted(() => {
           @click="toggleDarkMode"
           type="checkbox"
           class="toggle theme-controller bg-base-content col-span-2 col-start-1 row-start-1" />
-        <SunIcon />
         <MoonIcon />
+        <SunIcon />
       </label>
     </div>
   </div>

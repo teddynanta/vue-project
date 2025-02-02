@@ -1,6 +1,6 @@
 <template>
     <svg
-    class="stroke-base-100 fill-base-100 col-start-1 row-start-1"
+    class="stroke-base-100 fill-base-100 col-start-2 row-start-1"
     xmlns="http://www.w3.org/2000/svg"
     width="14"
     height="14"
