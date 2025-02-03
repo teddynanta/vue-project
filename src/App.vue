@@ -12,9 +12,9 @@ import HeroSection from './components/layouts/HeroSection.vue';
         <section id="hero" class="relative h-screen flex items-center justify-center">
             <HeroSection />
         </section>
-        <div id="tech" class="flex justify-center lg:px-52 2xl:px-96">
+        <!-- <div id="tech" class="flex justify-center lg:px-52 2xl:px-96">
         <Tab />
-        </div>
+        </div> -->
     </div>
 </template>
 

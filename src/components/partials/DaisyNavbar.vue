@@ -48,7 +48,7 @@ onMounted(() => {
   </dialog>
 
 
-  <div class="navbar bg-transparent text-base-content lg:px-52 2xl:px-96">
+  <div class="navbar bg-transparent text-base-content dark:text-gray-100 lg:px-52 2xl:px-96">
     <div class="navbar-start">
       <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">

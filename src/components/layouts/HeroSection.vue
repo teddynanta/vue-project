@@ -1,27 +1,19 @@
-<template>
-  <div class="hero min-h-screen bg-gradient-to-r from-pink-300 to-purple-400 dark:from-gray-900 dark:to-purple-900">
-    <div class="hero-content text-center">
-      <div class="max-w-md">
-        <h1 class="text-5xl font-bold text-white text-wrap">
-          Hello, I'm <transition name="fade" mode="out-in">
-            <span :key="currentText" class="text-accent font-bold">{{ currentText }}</span>
-          </transition>
-        </h1>
-        <p class="py-6 text-white">I'm a passionate developer specializing in Vue.js, Tailwind CSS, and DaisyUI. Welcome to my portfolio!</p>
-        <button class="btn btn-accent shining-button">Get Started</button>
-      </div>
-    </div>
-  </div>
-</template>
-
 <script>
+import GithubButton from '../partials/GithubButton.vue';
 export default {
+  components: {
+    GithubButton,
+  },
   name: 'HeroSection',
   data() {
     return {
       texts: ['Teddy Nanta', 'Web Developer', 'Graphic Designer'],
       currentIndex: 0,
-      currentText: 'Teddy',
+      displayedText: '',
+      isDeleting: false,
+      typingSpeed: 150, // Speed of typing
+      deletingSpeed: 100, // Speed of deleting
+      pauseDuration: 1000, // Pause between texts
     };
   },
   mounted() {
@@ -29,14 +21,57 @@ export default {
   },
   methods: {
     startTextAnimation() {
-      setInterval(() => {
-        this.currentIndex = (this.currentIndex + 1) % this.texts.length;
-        this.currentText = this.texts[this.currentIndex];
-      }, 2000);
+      const type = () => {
+        const currentText = this.texts[this.currentIndex];
+
+        if (this.isDeleting) {
+          // Delete text
+          this.displayedText = currentText.substring(0, this.displayedText.length - 1);
+        } else {
+          // Type text
+          this.displayedText = currentText.substring(0, this.displayedText.length + 1);
+        }
+
+        // Check if typing or deleting is complete
+        if (!this.isDeleting && this.displayedText === currentText) {
+          // Pause at the end of typing
+          setTimeout(() => {
+            this.isDeleting = true;
+            type();
+          }, this.pauseDuration);
+        } else if (this.isDeleting && this.displayedText === '') {
+          // Move to the next text
+          this.isDeleting = false;
+          this.currentIndex = (this.currentIndex + 1) % this.texts.length;
+          setTimeout(type, this.typingSpeed);
+        } else {
+          // Continue typing or deleting
+          setTimeout(type, this.isDeleting ? this.deletingSpeed : this.typingSpeed);
+        }
+      };
+
+      type(); // Start the animation
     },
   },
 };
 </script>
+
+<template>
+  <div class="hero min-h-screen bg-gradient-to-r from-pink-300 to-purple-400 dark:from-gray-900 dark:to-purple-900">
+    <div class="hero-content text-center">
+      <div class="max-w-2xl">
+          <h1 class="text-7xl font-bold text-base-content dark:text-gray-100 text-wrap">
+            Hello, I'm <br> <span class="text-emerald-600 dark:text-red-500 font-bold">{{ displayedText }}</span><span class="blinking-cursor">|</span>
+          </h1>
+          <p class="py-3 text-base-content font-semibold dark:font-normal dark:text-gray-100">I'm a passionate developer specializing in Tailwind CSS, Laravel. <br> Welcome to my portfolio!</p>
+          <!-- <button class="btn btn-accent shining-button">Get Started</button> -->
+          <GithubButton />
+      </div>
+    </div>
+  </div>
+</template>
+
+
 
 <style>
 /* Shining Button Effect */
@@ -71,16 +106,17 @@ export default {
   }
 }
 
-/* Text Animation */
-.text-accent {
-  color: #ff6b6b;
+/* Blinking Cursor */
+.blinking-cursor {
+  animation: blink 1s infinite;
 }
 
-/* Fade Transition */
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.5s ease;
-}
-.fade-enter, .fade-leave-to {
-  opacity: 0;
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
 }
 </style>
