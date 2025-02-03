@@ -1,8 +1,13 @@
 <script>
 import GithubButton from '../partials/GithubButton.vue';
+import { RocketLaunchIcon, StarIcon, HeartIcon } from '@heroicons/vue/24/solid';
+
 export default {
   components: {
     GithubButton,
+    RocketLaunchIcon,
+    StarIcon,
+    HeartIcon,
   },
   name: 'HeroSection',
   data() {
@@ -60,6 +65,9 @@ export default {
   <div class="hero min-h-screen bg-gradient-to-r from-pink-300 to-purple-400 dark:from-gray-900 dark:to-purple-900">
     <div class="hero-content text-center">
       <div class="max-w-2xl">
+        <RocketLaunchIcon class="floating-rocket absolute h-10 w-10 text-indigo-500"/>
+        <StarIcon class="floating-star absolute h-9 w-9 text-yellow-300"/>
+        <HeartIcon class="floating-heart absolute h-14 w-14 text-red-600"/>
           <h1 class="text-7xl font-bold text-base-content dark:text-gray-100 text-wrap">
             Hello, I'm <br> <span class="text-emerald-600 dark:text-red-500 font-bold">{{ displayedText }}</span><span class="blinking-cursor">|</span>
           </h1>
@@ -74,6 +82,53 @@ export default {
 
 
 <style>
+/* Floating Animation */
+@keyframes floatRocket {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Adjust the floating height */
+  }
+}
+
+@keyframes floatStar {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px); /* Adjust the floating height */
+  }
+}
+
+@keyframes floatHeart {
+  0%, 100% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateZ(25deg); /* Adjust the floating height */
+  }
+}
+
+.floating-rocket {
+  animation: floatRocket 3s ease-in-out infinite; /* Adjust duration as needed */
+  left: 50%; /* Adjust horizontal position */
+  top: 30%; /* Adjust vertical position */
+}
+
+.floating-star {
+  rotate: 45deg;
+  animation: floatStar 3.2s ease-in-out infinite; /* Adjust duration as needed */
+  left: 35%; /* Adjust horizontal position */
+  top: 53%; /* Adjust vertical position */
+}
+
+.floating-heart {
+  animation: floatHeart 3s ease-in-out infinite; /* Adjust duration as needed */
+  left: 60%; /* Adjust horizontal position */
+  top: 40%; /* Adjust vertical position */
+}
+
 /* Shining Button Effect */
 .shining-button {
   position: relative;

@@ -5,7 +5,7 @@ import GithubIcon from '../icons/GithubIcon.vue';
 <template>
   <a href="https://github.com/teddynanta" target="_blank" rel="noopener noreferrer">
     <button class="btn github-button">
-      <img src="../../../public/github.png" class="h-8 w-8" alt="">
+      <img src="/github.png" class="h-8 w-8" alt="">
       Check out my GitHub
     </button>
   </a>
