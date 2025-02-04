@@ -1,6 +1,6 @@
 <script>
 import GithubButton from '../partials/GithubButton.vue';
-import { RocketLaunchIcon, StarIcon, HeartIcon } from '@heroicons/vue/24/solid';
+import { RocketLaunchIcon, StarIcon, HeartIcon } from '@heroicons/vue/24/outline';
 
 export default {
   components: {
@@ -61,13 +61,15 @@ export default {
 };
 </script>
 
+  left: 50%; /* Adjust horizontal position */
+  top: 30%; /* Adjust vertical position */
 <template>
   <div class="hero min-h-screen bg-gradient-to-r from-pink-300 to-purple-400 dark:from-gray-900 dark:to-purple-900">
     <div class="hero-content text-center">
       <div class="max-w-2xl">
-        <RocketLaunchIcon class="floating-rocket absolute h-10 w-10 text-indigo-500"/>
-        <StarIcon class="floating-star absolute h-9 w-9 text-yellow-300"/>
-        <HeartIcon class="floating-heart absolute h-14 w-14 text-red-600"/>
+        <RocketLaunchIcon class="floating-rocket absolute top-1/3 left-2/4 h-10 w-10 text-base-content"/>
+        <StarIcon class="floating-star absolute h-9 w-9 text-base-content"/>
+        <HeartIcon class="floating-heart absolute h-14 w-14 text-base-content"/>
           <h1 class="text-7xl font-bold text-base-content dark:text-gray-100 text-wrap">
             Hello, I'm <br> <span class="text-emerald-600 dark:text-red-500 font-bold">{{ displayedText }}</span><span class="blinking-cursor">|</span>
           </h1>
@@ -112,8 +114,6 @@ export default {
 
 .floating-rocket {
   animation: floatRocket 3s ease-in-out infinite; /* Adjust duration as needed */
-  left: 50%; /* Adjust horizontal position */
-  top: 30%; /* Adjust vertical position */
 }
 
 .floating-star {
