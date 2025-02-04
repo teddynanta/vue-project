@@ -60,20 +60,19 @@ export default {
   },
 };
 </script>
-
-  left: 50%; /* Adjust horizontal position */
-  top: 30%; /* Adjust vertical position */
+left: 60%; /* Adjust horizontal position */
+top: 40%; /* Adjust vertical position */
 <template>
   <div class="hero min-h-screen bg-gradient-to-r from-pink-300 to-purple-400 dark:from-gray-900 dark:to-purple-900">
     <div class="hero-content text-center">
       <div class="max-w-2xl">
-        <RocketLaunchIcon class="floating-rocket absolute top-1/3 left-2/4 h-10 w-10 text-base-content"/>
-        <StarIcon class="floating-star absolute h-9 w-9 text-base-content"/>
-        <HeartIcon class="floating-heart absolute h-14 w-14 text-base-content"/>
-          <h1 class="text-7xl font-bold text-base-content dark:text-gray-100 text-wrap">
+        <RocketLaunchIcon class="floating-rocket absolute top-1/3 left-2/4 -mt-5 h-10 w-10 text-base-content"/>
+        <StarIcon class="floating-star absolute top-2/4 left-1/3 mt-10 h-9 w-9 text-base-content"/>
+        <HeartIcon class="floating-heart absolute left-2/3 -ms-16 h-14 w-14 text-base-content"/>
+          <h1 class="md:text-7xl text-5xl font-bold text-base-content dark:text-gray-100 text-wrap">
             Hello, I'm <br> <span class="text-emerald-600 dark:text-red-500 font-bold">{{ displayedText }}</span><span class="blinking-cursor">|</span>
           </h1>
-          <p class="py-3 text-base-content font-semibold dark:font-normal dark:text-gray-100">I'm a passionate developer specializing in Tailwind CSS, Laravel. <br> Welcome to my portfolio!</p>
+          <p class="py-3 text-sm md:text-md text-base-content font-semibold dark:font-normal dark:text-gray-100">I'm a passionate developer specializing in Tailwind CSS, Laravel. <br> Welcome to my portfolio!</p>
           <!-- <button class="btn btn-accent shining-button">Get Started</button> -->
           <GithubButton />
       </div>
@@ -119,14 +118,10 @@ export default {
 .floating-star {
   rotate: 45deg;
   animation: floatStar 3.2s ease-in-out infinite; /* Adjust duration as needed */
-  left: 35%; /* Adjust horizontal position */
-  top: 53%; /* Adjust vertical position */
 }
 
 .floating-heart {
   animation: floatHeart 3s ease-in-out infinite; /* Adjust duration as needed */
-  left: 60%; /* Adjust horizontal position */
-  top: 40%; /* Adjust vertical position */
 }
 
 /* Shining Button Effect */
