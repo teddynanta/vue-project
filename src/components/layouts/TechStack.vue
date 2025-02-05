@@ -8,9 +8,7 @@
         <div
           v-for="tech in techStack"
           :key="tech.name"
-          class="tech-card flex flex-col items-center p-6 bg-base-200 dark:bg-base-300 rounded-lg shadow-md cursor-pointer"
-          @mouseenter="animateCard($event)"
-          @mouseleave="resetCard($event)"
+          class="tech-card flex flex-col items-center p-6 bg-base-200 dark:bg-base-300 rounded-lg shadow-md cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 hover:rotate-2 hover:shadow-glow"
         >
           <img :src="tech.logo" :alt="tech.name" class="h-12 w-12 mb-4" />
           <span class="text-lg font-semibold text-gray-700 dark:text-gray-200">
@@ -23,8 +21,6 @@
 </template>
 
 <script>
-import { animate, stagger } from 'motion';
-
 export default {
   data() {
     return {
@@ -40,25 +36,12 @@ export default {
       ],
     };
   },
-  methods: {
-    animateCard(event) {
-      animate(
-        event.currentTarget,
-        { scale: 1.05, rotate: '2deg' },
-        { duration: 0.2, easing: 'ease-in-out' }
-      );
-    },
-    resetCard(event) {
-      animate(
-        event.currentTarget,
-        { scale: 1, rotate: '0deg' },
-        { duration: 0.2, easing: 'ease-in-out' }
-      );
-    },
-  },
 };
 </script>
 
 <style scoped>
-/* Add any custom styles here if needed */
+/* Custom glow effect */
+.hover\:shadow-glow:hover {
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.5); /* Adjust the color and intensity as needed */
+}
 </style>

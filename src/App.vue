@@ -11,13 +11,13 @@ import TechStack from './components/layouts/TechStack.vue';
         <header class="fixed top-0 left-0 w-full z-50 bg-base-100/20 backdrop-blur-md shadow-md">
             <DaisyNavbar />
         </header>
-        <section id="hero" class="h-screen flex items-center justify-center">
+        <section id="hero" class="h-screen flex items-center justify-center" data-aos="fade-up">
             <HeroSection />
         </section>
-        <section id="about">
+        <section id="about" data-aos="fade-up">
             <About />
         </section>
-        <section id="tech" class="flex justify-center lg:px-52 2xl:px-96">
+        <section id="tech" class="flex justify-center lg:px-52 2xl:px-96" data-aos="fade-up">
         <TechStack />
         </section>
     </div>

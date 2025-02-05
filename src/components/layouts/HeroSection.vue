@@ -60,8 +60,7 @@ export default {
   },
 };
 </script>
-left: 60%; /* Adjust horizontal position */
-top: 40%; /* Adjust vertical position */
+
 <template>
   <div class="hero min-h-screen bg-gradient-to-r from-pink-300 to-purple-400 dark:from-gray-900 dark:to-purple-900">
     <div class="hero-content text-center">
