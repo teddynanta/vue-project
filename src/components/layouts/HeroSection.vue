@@ -65,9 +65,9 @@ export default {
   <div class="hero min-h-screen bg-gradient-to-r from-pink-300 to-purple-400 dark:from-gray-900 dark:to-purple-900">
     <div class="hero-content text-center">
       <div class="max-w-2xl">
-        <RocketLaunchIcon class="floating-rocket absolute top-1/3 left-2/4 -mt-5 h-10 w-10 text-base-content"/>
-        <StarIcon class="floating-star absolute top-2/4 left-1/3 mt-10 h-9 w-9 text-base-content"/>
-        <HeartIcon class="floating-heart absolute left-2/3 -ms-16 h-14 w-14 text-base-content"/>
+        <RocketLaunchIcon class="floating-rocket absolute top-1/3 left-2/4 -mt-5 h-10 w-10 text-base-content invisible md:visible"/>
+        <StarIcon class="floating-star absolute top-2/4 left-1/3 mt-10 h-9 w-9 text-base-content invisible md:visible"/>
+        <HeartIcon class="floating-heart absolute left-2/3 -ms-16 h-14 w-14 text-base-content invisible md:visible"/>
           <h1 class="md:text-7xl text-5xl font-bold text-base-content dark:text-gray-100 text-wrap">
             Hello, I'm <br> <span class="text-emerald-600 dark:text-red-500 font-bold">{{ displayedText }}</span><span class="blinking-cursor">|</span>
           </h1>
