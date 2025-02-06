@@ -20,7 +20,7 @@
           </div>
         </div>
         <div class="mx-auto w-full relative invisible lg:visible">
-          <img src="/tednnt.png" alt="Picture" class="bottom-0 absolute w-96 h-auto rounded-xl z-[100]"/>
+          <img src="/tednnt.png" alt="Picture" class="bottom-0 absolute w-96 h-auto rounded-xl z-100"/>
           <div class="absolute left-[10%] bottom-0 bg-indigo-600 h-80 w-72 z-50 rounded-t-full"></div>
           <div class="absolute w-[80%] h-[80%] -top-[10%] -left-[10%] bg-radial-[at_25%_25%] blur-xl"></div>
         </div>

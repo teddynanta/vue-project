@@ -67,7 +67,7 @@ onMounted(() => {
         </div>
         <ul
           tabindex="0"
-          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow-sm">
           <li><a>Item 1</a></li>
           <li>
             <a>Parent</a>

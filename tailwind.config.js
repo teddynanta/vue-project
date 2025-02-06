@@ -2,14 +2,12 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
+    "./src/**/*.{vue,js,ts,jsx,tsx,css}",
+    "*.{html,js,ts,vue}",
   ],
   theme: {
     extend: {},
   },
-  // plugins: [
-  //   require('daisyui'),
-  // ],
   darkMode : 'class',
   daisyui: {
     themes: ['light', 'dark'],

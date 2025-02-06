@@ -62,7 +62,7 @@ export default {
 </script>
 
 <template>
-  <div class="hero min-h-screen bg-gradient-to-r from-pink-300 to-purple-400 dark:from-gray-900 dark:to-purple-900">
+  <div class="hero min-h-screen bg-linear-to-r from-pink-300 to-purple-400 dark:from-gray-900 dark:to-purple-900">
     <div class="hero-content text-center">
       <div class="max-w-2xl">
         <RocketLaunchIcon class="floating-rocket absolute top-1/3 left-2/4 -mt-5 h-10 w-10 text-base-content invisible md:visible"/>

@@ -11,9 +11,9 @@
           <button
             :class="[
               'w-full rounded-lg py-2.5 text-sm font-medium leading-5',
-              'ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
+              'ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-hidden focus:ring-2',
               selected
-                ? 'bg-white text-blue-700 shadow'
+                ? 'bg-white text-blue-700 shadow-sm'
                 : 'text-base-content hover:bg-white/[0.12] hover:text-white',
             ]"
           >
@@ -28,7 +28,7 @@
           :key="idx"
           :class="[
             'rounded-xl bg-base-300 p-3',
-            'ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
+            'ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-hidden focus:ring-2',
           ]"
         >
           <ul>
@@ -55,7 +55,7 @@
                 href="#"
                 :class="[
                   'absolute inset-0 rounded-md',
-                  'ring-blue-400 focus:z-10 focus:outline-none focus:ring-2',
+                  'ring-blue-400 focus:z-10 focus:outline-hidden focus:ring-2',
                 ]"
               />
             </li>
