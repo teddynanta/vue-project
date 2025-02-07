@@ -1,8 +1,9 @@
 <template>
   <section class="py-12 bg-base-100">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-gray-100 mb-8">
-        Tech Stack
+    <div class="container relative mx-auto px-6">
+      <div class="absolute h-10 w-60 left-[33%] skew-x-6 z-10 -skew-y-3 bg-pink-300 dark:bg-indigo-600"></div>
+      <h2 class="text-3xl font-bold text-center -skew-y-3 z-20 relative text-base-content mb-8">
+        Tech I Use 👇
       </h2>
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         <div

@@ -1,5 +1,4 @@
 <script setup>
-import HomeIcon from '../icons/HomeIcon.vue';
 import { ref, onMounted } from 'vue'; // Import ref and onMounted
 import SunIcon from '../icons/SunIcon.vue';
 import MoonIcon from '../icons/MoonIcon.vue';
@@ -106,11 +105,11 @@ onMounted(() => {
       </ul>
     </div>  
     <div class="navbar-end me-3">
-      <label class="grid cursor-pointer place-items-center">
+      <label class="toggle text-base-content">
         <input
           @click="toggleDarkMode"
           type="checkbox"
-          class="toggle theme-controller bg-base-content col-span-2 col-start-1 row-start-1" />
+          class="theme-controller" />
         <MoonIcon />
         <SunIcon />
       </label>

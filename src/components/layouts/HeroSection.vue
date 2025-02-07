@@ -69,7 +69,7 @@ export default {
         <StarIcon class="floating-star absolute top-2/4 left-1/3 mt-10 h-9 w-9 text-base-content invisible md:visible"/>
         <HeartIcon class="floating-heart absolute left-2/3 -ms-16 h-14 w-14 text-base-content invisible md:visible"/>
           <h1 class="md:text-7xl text-5xl font-bold text-base-content dark:text-gray-100 text-wrap">
-            Hello, I'm <br> <span class="text-emerald-600 dark:text-red-500 font-bold">{{ displayedText }}</span><span class="blinking-cursor">|</span>
+            Hello, I'm <br> <span class="text-primary dark:text-red-500 font-bold">{{ displayedText }}</span><span class="blinking-cursor">|</span>
           </h1>
           <p class="py-3 text-sm md:text-md text-base-content font-semibold dark:font-normal dark:text-gray-100">I'm a passionate developer specializing in Tailwind CSS, Laravel. <br> Welcome to my portfolio!</p>
           <!-- <button class="btn btn-accent shining-button">Get Started</button> -->

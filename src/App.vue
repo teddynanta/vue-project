@@ -4,6 +4,7 @@ import Tab from './components/layouts/Tab.vue';
 import HeroSection from './components/layouts/HeroSection.vue';
 import About from './components/layouts/About.vue';
 import TechStack from './components/layouts/TechStack.vue';
+import Project from './components/layouts/Project.vue';
 </script>
 
 <template>
@@ -18,7 +19,10 @@ import TechStack from './components/layouts/TechStack.vue';
             <About />
         </section>
         <section id="tech" class="flex justify-center lg:px-52 2xl:px-96" data-aos="fade-up">
-        <TechStack />
+            <TechStack />
+        </section>
+        <section>
+            <Project />
         </section>
     </div>
 </template>
