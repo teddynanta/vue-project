@@ -72,9 +72,11 @@ export default {
             Hello, I'm <br> <span class="text-primary dark:text-red-500 font-bold">{{ displayedText }}</span><span class="blinking-cursor">|</span>
           </h1>
           <p class="py-3 text-sm md:text-md text-base-content font-semibold dark:font-normal dark:text-gray-100">I'm a passionate developer specializing in Tailwind CSS, Laravel. <br> Welcome to my portfolio!</p>
-          <!-- <button class="btn btn-accent shining-button">Get Started</button> -->
           <GithubButton />
-      </div>
+          <a href="https://drive.google.com/file/d/1ok_prDlArQE9nx_M5R8RdXopjQdu8qrW/view?usp=sharing" target="_blank">
+            <button class="btn btn-primary dark:bg-red-500 dark:border-red-500 shadow-none absolute mx-auto mt-2 shining-button block rounded-xl">Check out my CV</button>
+          </a>
+        </div>
     </div>
   </div>
 </template>
@@ -132,15 +134,15 @@ export default {
 .shining-button::after {
   content: '';
   position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
+  top: -10%;
+  left: -90%;
+  width: 350%;
+  height: 350%;
   background: linear-gradient(
     45deg,
-    rgba(255, 255, 255, 0.2) 25%,
+    rgba(255, 255, 255, 0.5) 25%,
     rgba(255, 255, 255, 0) 50%,
-    rgba(255, 255, 255, 0.2) 75%
+    rgba(255, 255, 255, 0.5) 75%
   );
   transform: rotate(45deg);
   animation: shine 3s infinite;

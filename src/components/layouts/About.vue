@@ -5,7 +5,14 @@
         <div class="lg:pt-4 lg:pr-8">
           <div class="lg:max-w-lg">
             <h2 class="text-base/7 font-semibold text-pink-300 dark:text-primary">{{ displayedText }}<span class="blinking-cursor">|</span></h2>
-            <p class="mt-2 text-4xl font-bold -mb-3 tracking-tight text-pretty text-base-content sm:text-5xl">This is me 👉</p>
+            <p class="mt-2 text-4xl font-bold -mb-3 tracking-tight text-pretty text-base-content sm:text-5xl">This is me👉</p>
+            <div class="avatar -mb-24 lg:hidden">
+              <div class="w-24 relative left-52 -top-16 rounded-full md:left-80 md:w-72 md:mask md:mask-hexagon-2 bg-pink-300 dark:bg-primary">
+                <a href="https://www.instagram.com/teddynnt/" target="_blank" rel="noopener noreferrer">
+                  <img src="/tednnt.png" />
+                </a>
+              </div>
+            </div>
             <p class="mt-6 text-lg/8 text-base-content">Who am I? or... <i><b>What am I?</b></i></p>
             <dl class="mt-10 max-w-xl space-y-8 text-base/7 text-base-content lg:max-w-none">
               <div v-for="feature in features" :key="feature.name" class="relative pl-9">
@@ -31,7 +38,7 @@
 </template>
 
 <script>
-import { UserIcon, BoltIcon, ServerIcon} from '@heroicons/vue/20/solid';
+import { UserIcon, BoltIcon, SparklesIcon} from '@heroicons/vue/20/solid';
 export default {
   data() {
     return {
@@ -50,7 +57,7 @@ export default {
           {
             name: 'Chameleon\'s Grace.',
             description: 'Possesses the ability to adapt and blend into any environment, tech stacks, et cetera.',
-          icon: ServerIcon,
+          icon: SparklesIcon,
         },
       ],
       texts: ['Halo,', 'ٱلسَّلَامُ عَلَيْكُمْ,', 'こんにちは,', 'Bonjour,', 'Hello,', '안녕하세요,', 'Hola,', 'Ciao,', 'Olá,', '你好,', 'Merhaba,', 'नमस्ते,', 'สวัสดี,', 'مرحباً,', 'Chào bạn,', 'Привет,', 'Salut,', 'Hej,', 'Hallo,', 'Hei,', 'Hoi,', 'Hej,', 'Ahoj,', 'Hei,', 'Saluton,', 'Hej,', 'Halo,', 'Hei'],
