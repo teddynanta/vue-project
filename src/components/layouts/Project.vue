@@ -27,23 +27,23 @@ const projects = ref([
   {
     id: 1,
     title: 'Lubuk Linggau Website',
-    description: 'A personal portfolio website to showcase my work.',
-    image: 'https://placehold.co/600x400',
-    link: '#',
+    description: 'A websites that I build with my team for Lubuk Linggau City Government. This websites uses CodeIgniter as the backend and Bootstrap as the frontend.',
+    image: '/ss web kota.png',
+    link: 'https://lubuklinggaukota.go.id',
   },
   {
     id: 2,
     title: 'Satu Ayat with Vue',
-    description: 'A full-featured e-commerce platform built with Vue and Laravel.',
-    image: 'https://placehold.co/600x400',
-    link: '#',
+    description: 'A project that I build to learn Vue.js. This project is a simple web app that shows a random verse from the Quran. I have made previous version with plain css and vanilla js, and this is the Vue.js version.',
+    image: '/ss satu ayat.png',
+    link: 'https://satu-ayat-vue.vercel.app',
   },
   {
     id: 3,
     title: 'Portfolio Website',
-    description: 'A content management system for managing blog posts.',
-    image: 'https://placehold.co/600x400',
-    link: '#',
+    description: 'This website.',
+    image: '/ss portfolio.png',
+    link: 'https://portfolio-teddynnt.vercel.app',
   },
 ]);
 </script>

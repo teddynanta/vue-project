@@ -1,10 +1,10 @@
 <script setup>
 import DaisyNavbar from './components/partials/DaisyNavbar.vue';
-import Tab from './components/layouts/Tab.vue';
 import HeroSection from './components/layouts/HeroSection.vue';
 import About from './components/layouts/About.vue';
 import TechStack from './components/layouts/TechStack.vue';
 import Project from './components/layouts/Project.vue';
+import Footer from './components/partials/Footer.vue';
 </script>
 
 <template>
@@ -24,6 +24,7 @@ import Project from './components/layouts/Project.vue';
         <section id="project">
             <Project />
         </section>
+        <Footer />
     </div>
 </template>
 
