@@ -1,6 +1,7 @@
 <script>
 import GithubButton from '../partials/GithubButton.vue';
 import { RocketLaunchIcon, StarIcon, HeartIcon } from '@heroicons/vue/24/outline';
+import { FolderArrowDownIcon } from '@heroicons/vue/20/solid';
 
 export default {
   components: {
@@ -8,6 +9,7 @@ export default {
     RocketLaunchIcon,
     StarIcon,
     HeartIcon,
+    FolderArrowDownIcon,
   },
   name: 'HeroSection',
   data() {
@@ -72,10 +74,13 @@ export default {
             Hello, I'm <br> <span class="text-primary dark:text-red-500 font-bold">{{ displayedText }}</span><span class="blinking-cursor">|</span>
           </h1>
           <p class="py-3 text-sm md:text-md text-base-content font-semibold dark:font-normal dark:text-gray-100">I'm a passionate developer specializing in Tailwind CSS, Laravel. <br> Welcome to my portfolio!</p>
-          <GithubButton />
           <a href="https://drive.google.com/file/d/1ok_prDlArQE9nx_M5R8RdXopjQdu8qrW/view?usp=sharing" target="_blank">
-            <button class="btn btn-primary dark:bg-red-500 dark:border-red-500 shadow-none absolute mx-auto mt-2 shining-button block rounded-xl">Check out my CV</button>
+            <button class="btn btn-primary flex dark:bg-red-500 dark:border-red-500 shadow-none absolute mx-auto mb-2 shining-button rounded-xl">
+              <FolderArrowDownIcon class="h-6 w-6 inline"/>
+              Check out my CV
+            </button>
           </a>
+          <GithubButton />
         </div>
     </div>
   </div>
@@ -135,9 +140,9 @@ export default {
   content: '';
   position: absolute;
   top: -10%;
-  left: -90%;
-  width: 350%;
-  height: 350%;
+  left: -105%;
+  width: 370%;
+  height: 370%;
   background: linear-gradient(
     45deg,
     rgba(255, 255, 255, 0.5) 25%,

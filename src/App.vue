@@ -21,7 +21,7 @@ import Project from './components/layouts/Project.vue';
         <section id="tech" class="flex justify-center lg:px-52 2xl:px-96" data-aos="fade-up">
             <TechStack />
         </section>
-        <section>
+        <section id="project">
             <Project />
         </section>
     </div>

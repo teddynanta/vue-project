@@ -3,6 +3,10 @@ import { ref, onMounted } from 'vue'; // Import ref and onMounted
 import SunIcon from '../icons/SunIcon.vue';
 import MoonIcon from '../icons/MoonIcon.vue';
 
+const scrollToSection = (sectionId) => {
+  document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+};
+
 // Reactive state for dark mode
 const isDarkMode = ref(false);
 
@@ -83,16 +87,26 @@ onMounted(() => {
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
         <li>
-          <a href="#hero" class="font-bold">
+          <a @click="scrollToSection('hero')" class="font-bold">
             Home
           </a>
         </li>
         <li>
-          <a href="#tech" class="font-bold">
+          <a @click="scrollToSection('about')" class="font-bold">
+            About
+          </a>
+        </li>
+        <li>
+          <a @click="scrollToSection('tech')" class="font-bold">
             Tech
           </a>
         </li>
         <li>
+          <a @click="scrollToSection('project')" class="font-bold">
+            Projects
+          </a>
+        </li>
+        <!-- <li>
           <details>
             <summary class="font-bold">Parent</summary>
             <ul class="p-2">
@@ -101,7 +115,7 @@ onMounted(() => {
             </ul>
           </details>
         </li>
-        <li><a class="font-bold">Contacs</a></li>
+        <li><a class="font-bold">Contacs</a></li> -->
       </ul>
     </div>  
     <div class="navbar-end me-3">

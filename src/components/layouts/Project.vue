@@ -26,21 +26,21 @@ import { ref } from 'vue';
 const projects = ref([
   {
     id: 1,
-    title: 'Portfolio Website',
+    title: 'Lubuk Linggau Website',
     description: 'A personal portfolio website to showcase my work.',
     image: 'https://placehold.co/600x400',
     link: '#',
   },
   {
     id: 2,
-    title: 'E-commerce Platform',
+    title: 'Satu Ayat with Vue',
     description: 'A full-featured e-commerce platform built with Vue and Laravel.',
     image: 'https://placehold.co/600x400',
     link: '#',
   },
   {
     id: 3,
-    title: 'Blog CMS',
+    title: 'Portfolio Website',
     description: 'A content management system for managing blog posts.',
     image: 'https://placehold.co/600x400',
     link: '#',
